@@ -1,0 +1,37 @@
+.ui.menu{
+    max-width: 100%;
+}
+.ui.header{
+    max-width: 100%;
+}
+.ui.header.item.borderless{
+    max-width: 100%;
+    
+}
+.ui.menu .ui.container {
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.ui.header {
+    text-align: center; 
+    padding-left: 2em;
+    align-items: center;
+    
+}
+
+.ui.container a{
+    color: white;
+    font-size: 18px;
+
+}
+
+
+
+
