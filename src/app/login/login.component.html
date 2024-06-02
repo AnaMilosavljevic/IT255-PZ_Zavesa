@@ -1,0 +1,18 @@
+<div class="login">
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div>
+        <label for="username">Korisničko ime:</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Lozinka:</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>Još uvek nemaš nalog? <a routerLink="/register">Registruj se ovde!</a></p>
+  </div>
+  </div>
+  

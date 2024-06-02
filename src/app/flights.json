@@ -1,0 +1,8 @@
+{
+    "flights": [
+      { "id": 1, "departure": "Belgrade", "destination": "Tampa", "departureDate": "2024-05-20", "arrivalDate": "2024-05-21", "price": 1500 },
+      { "id": 2, "departure": "Ljubljana", "destination": "Belgrade", "departureDate": "2024-05-22", "arrivalDate": "2024-05-22", "price": 300 },
+      { "id": 3, "departure": "Trondheim", "destination": "Stavanger", "departureDate": "2024-05-23", "arrivalDate": "2024-05-23", "price": 200 }
+    ]
+  }
+  

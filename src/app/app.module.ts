@@ -11,6 +11,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { RepertoarComponent } from './repertoar/repertoar.component';
 
 
 @NgModule({
@@ -22,6 +25,9 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     FooterComponent,
     ContactComponent,
+    LoginComponent,
+    RegisterComponent,
+    RepertoarComponent
     
   ],
   imports: [
