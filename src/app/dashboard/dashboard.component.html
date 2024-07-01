@@ -1,0 +1,11 @@
+<div class="box">
+<div class="dashboard" *ngIf="user">
+    <h2>Dobrodošli, {{ user.username }}!</h2>
+    <p>Izaberite željenu opciju:</p><br>
+    <ul>
+      <li><a routerLink="/repertoar">Repertoar</a></li><br>
+      <li><a routerLink="/moje-rezervacije">Moje rezervacije</a></li>
+    </ul>
+  </div>
+</div>
+  

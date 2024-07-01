@@ -14,6 +14,9 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RepertoarComponent } from './repertoar/repertoar.component';
+import { RezervacijaComponent } from './rezervacija/rezervacija.component';
+import { MojeRezervacijeComponent } from './moje-rezervacije/moje-rezervacije.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { RepertoarComponent } from './repertoar/repertoar.component';
     ContactComponent,
     LoginComponent,
     RegisterComponent,
-    RepertoarComponent
+    RepertoarComponent,
+    RezervacijaComponent,
+    MojeRezervacijeComponent,
+    DashboardComponent
     
   ],
   imports: [

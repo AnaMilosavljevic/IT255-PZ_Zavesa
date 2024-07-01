@@ -1,0 +1,15 @@
+<div class="reservations-container">
+    <h2>Moje rezervacije</h2>
+    <div *ngIf="reservations.length > 0; else noReservations">
+      <ul>
+        <li *ngFor="let reservation of reservations">
+          <strong>Predstava:</strong> {{ reservation.showTitle }} <br>
+          <strong>Datum:</strong> {{ reservation.date }}
+        </li>
+      </ul>
+    </div>
+    <ng-template #noReservations>
+      <p>Nemate rezervisanih karata.</p>
+    </ng-template>
+  </div>
+  

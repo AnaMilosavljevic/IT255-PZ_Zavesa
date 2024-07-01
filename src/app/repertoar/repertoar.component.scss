@@ -1,0 +1,94 @@
+.repertoar-container {
+    padding: 20px;
+    padding-top: 90px;
+    text-align: center;
+
+  
+    .repertoar-title {
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      position: relative;
+      display: inline-block;
+  
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: purple; 
+        position: absolute;
+        bottom: -5px; 
+        left: 0;
+      }
+    }
+  
+    .shows-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .show-card {
+      background-color: rgba(249, 249, 249, 0.7);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 15px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+  
+      .show-image {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      .show-info {
+        padding: 15px;
+  
+        .show-title {
+          margin: 10px 0;
+          position: relative;
+          display: inline-block;
+  
+          &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: purple;
+            position: absolute;
+            bottom: -5px; 
+            left: 0;
+          }
+        }
+  
+        p {
+          margin: 5px 0;
+        }
+  
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #45a049;
+          }
+        }
+      }
+    }
+  }
+  

@@ -14,10 +14,10 @@ export class LoginComponent {
   constructor(private userService: UserService, private router: Router) {}
 
   login() {
-    this.userService.getUser(this.username, this.password).subscribe(users => {
-      if (users.length > 0) {
-        alert('Uspešna prijava na sistem');
-        this.router.navigate(['/home']);
+    this.userService.getUserByUsername(this.username).subscribe(user => {
+      if (user && user.password === this.password) {
+        this.userService.setCurrentUser(user);
+        this.router.navigate(['/dashboard']);
       } else {
         alert('Pogrešno korisničko ime ili lozinka');
       }

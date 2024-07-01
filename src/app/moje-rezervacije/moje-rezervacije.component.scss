@@ -1,0 +1,38 @@
+.reservations-container {
+    width: 750px;
+    margin: 38px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 249, 0.7);
+    text-align: center;
+  
+    h2 {
+      color: black;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 20px;
+        background: #f1f1f1;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: left;
+  
+        strong {
+          color: #333;
+        }
+      }
+    }
+  
+    p {
+      color: black;
+      font-size: 1.2rem;
+    }
+  }
+  

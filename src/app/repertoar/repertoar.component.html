@@ -1,1 +1,14 @@
-<p>repertoar works!</p>
+<div class="repertoar-container">
+    <h2 class="repertoar-title">Repertoar Predstava</h2>
+    <div class="shows-list">
+      <div class="show-card" *ngFor="let show of shows">
+        <div class="show-info">
+          <h3 class="show-title">{{ show.title }}</h3>
+          <p>{{ show.description }}</p>
+          <p><strong>Datum:</strong> {{ show.date }}</p>
+          <button (click)="reserveTicket(show.id)">Rezerviši kartu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
