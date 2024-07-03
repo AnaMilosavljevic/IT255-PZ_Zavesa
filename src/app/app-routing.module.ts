@@ -20,11 +20,12 @@ const routes: Routes = [
   { path: 'repertoar', component: RepertoarComponent },
   { path: 'rezervacija/:id', component: RezervacijaComponent },
   { path: 'moje-rezervacije', component: MojeRezervacijeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/dashboard' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-
 })
 export class AppRoutingModule { }
