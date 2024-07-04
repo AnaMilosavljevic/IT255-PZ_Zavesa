@@ -9,10 +9,10 @@
     <li class="nav-item">
       <a routerLink="/contact">Kontakt</a>
     </li>
-    <li class="nav-item" *ngIf="!isLoggedIn">
+    <li class="nav-item" *ngIf="!user">
       <a routerLink="/login">Prijava</a>
     </li>
-    <li class="nav-item" *ngIf="isLoggedIn">
+    <li class="nav-item" *ngIf="user">
       <a (click)="logout()">Odjava</a>
     </li>
   </ul>

@@ -15,6 +15,6 @@ export class ReservationService {
   }
 
   getReservationsForUser(userId: number): Observable<any[]> {
-    return this.http.get<any[]>(`http://localhost:3000/reservations?userId=${userId}`);
+    return this.http.get<any[]>(`${this.apiUrl}?userId=${userId}`);
   }
 }
