@@ -9,6 +9,7 @@ import { RepertoarComponent } from './repertoar/repertoar.component';
 import { RezervacijaComponent } from './rezervacija/rezervacija.component';
 import { MojeRezervacijeComponent } from './moje-rezervacije/moje-rezervacije.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 
 const routes: Routes = [
   { path: 'recommendation', component: RecommendationComponent },
@@ -20,12 +21,13 @@ const routes: Routes = [
   { path: 'repertoar', component: RepertoarComponent },
   { path: 'rezervacija/:id', component: RezervacijaComponent },
   { path: 'moje-rezervacije', component: MojeRezervacijeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'admin-panel', component: AdminPanelComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', redirectTo: '/dashboard' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

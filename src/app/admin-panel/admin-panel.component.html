@@ -1,0 +1,49 @@
+<div class="admin-panel-container">
+    <h2>Admin Panel</h2>
+  
+    <form *ngIf="userService.isAdmin()" (submit)="addShow()">
+      <div class="form-group">
+        <label>Naziv predstave:</label>
+        <input type="text" [(ngModel)]="newShow.title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label>Datum:</label>
+        <input type="text" [(ngModel)]="newShow.date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label>Opis:</label>
+        <textarea [(ngModel)]="newShow.description" name="description"></textarea>
+      </div>
+      <button type="submit">Dodaj predstavu</button>
+    </form>
+  
+    <ul *ngIf="shows.length > 0">
+      <li *ngFor="let show of shows">
+        <div>{{ show.title }}</div>
+        <div>{{ show.date }}</div>
+        <div>{{ show.description }}</div>
+        <button (click)="deleteShow(show.id)">Obriši</button>
+        <button (click)="editShow(show)">Uredi</button>
+      </li>
+    </ul>
+    <p *ngIf="shows.length === 0">Nema dodatih predstava.</p>
+  
+    <div *ngIf="editingShow">
+      <h3>Uredi predstavu</h3>
+      <div class="form-group">
+        <label>Naziv predstave:</label>
+        <input type="text" [(ngModel)]="editingShow.title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label>Datum:</label>
+        <input type="text" [(ngModel)]="editingShow.date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label>Opis:</label>
+        <textarea [(ngModel)]="editingShow.description" name="description"></textarea>
+      </div>
+      <button (click)="updateShow()">Sačuvaj promene</button>
+      <button (click)="cancelEdit()">Odustani</button>
+    </div>
+  </div>
+  

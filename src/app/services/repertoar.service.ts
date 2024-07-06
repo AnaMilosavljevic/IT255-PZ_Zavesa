@@ -13,4 +13,16 @@ export class RepertoarService {
   getShows(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
   }
+
+  addShow(show: any): Observable<any> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
+
+  deleteShow(showId: number): Observable<any> {
+    return this.http.delete<any>(`${this.apiUrl}/${showId}`);
+  }
+
+  updateShow(show: any): Observable<any> {
+    return this.http.put<any>(`${this.apiUrl}/${show.id}`, show);
+  }
 }

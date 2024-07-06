@@ -1,127 +1,65 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "admin",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user",
       "password": "user",
       "role": "user"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "ana",
       "password": "ana",
+      "role": "user"
+    },
+    {
+      "id": "2004",
+      "username": "njanja",
+      "password": "njanja",
       "role": "user"
     }
   ],
   "shows": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Knjiga o Milutinu",
-      "description": " 'Knjiga o Milutinu' je druga srpska Biblija, priča o stradanju i selu koje nikada ne može umreti",
-      "date": "2024-06-10"
+      "description": " 'Knjiga o Milutinu' je druga srpska Biblija, priča o stradanju i selu koje nikada ne može umreti...",
+      "date": "2024-09-10"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Romeo i Julija",
-      "description": "Balet Romeo i Julija je 'za sva vremena' velika i tragična ljubav iz vremena renesansnog italijanskog grada Verone",
-      "date": "2024-06-15"
+      "description": "Balet Romeo i Julija je 'za sva vremena' velika i tragična ljubav iz vremena renesansnog italijanskog grada Verone...",
+      "date": "2024-09-15"
     }
   ],
   "reservations": [
     {
-      "id": "109d",
-      "showId": 1,
-      "userId": 1
-    },
-    {
-      "id": "1aaa",
-      "showId": 1,
-      "userId": 1
-    },
-    {
-      "id": "3e17",
-      "showId": 2,
-      "userId": 1
-    },
-    {
-      "id": "cff7",
-      "showId": 1,
-      "userId": 1
-    },
-    {
-      "id": "2944",
-      "showId": 1,
-      "userId": 3,
+      "id": "8ac4",
+      "showId": "1",
+      "userId": "3",
       "showTitle": "Knjiga o Milutinu",
-      "date": "2024-07-04T20:20:23.195Z"
+      "date": "2024-09-10"
     },
     {
-      "id": "d5be",
-      "showId": 2,
-      "userId": 3,
-      "showTitle": "Romeo i Julija",
-      "date": "2024-07-04T20:20:54.645Z"
-    },
-    {
-      "id": "5ca2",
-      "showId": 1,
-      "userId": 3,
+      "id": "c154",
+      "showId": "1",
+      "userId": "3",
       "showTitle": "Knjiga o Milutinu",
-      "date": "2024-07-04T20:20:57.278Z"
+      "date": "2024-09-10"
     },
     {
-      "id": "6fef",
-      "showId": 1,
-      "userId": 3,
+      "id": "f2d0",
+      "showId": "1",
+      "userId": "3",
       "showTitle": "Knjiga o Milutinu",
-      "date": 1
-    },
-    {
-      "id": "d992",
-      "showId": 2,
-      "userId": 3,
-      "showTitle": "Romeo i Julija",
-      "date": [
-        {
-          "id": 1,
-          "title": "Knjiga o Milutinu",
-          "description": " 'Knjiga o Milutinu' je druga srpska Biblija, priča o stradanju i selu koje nikada ne može umreti",
-          "date": "2024-06-10"
-        },
-        {
-          "id": 2,
-          "title": "Romeo i Julija",
-          "description": "Balet Romeo i Julija je 'za sva vremena' velika i tragična ljubav iz vremena renesansnog italijanskog grada Verone",
-          "date": "2024-06-15"
-        }
-      ]
-    },
-    {
-      "id": "6da9",
-      "showId": 1,
-      "userId": 3,
-      "showTitle": "Knjiga o Milutinu",
-      "showDate": "2024-06-10"
-    },
-    {
-      "id": "b79f",
-      "showId": 1,
-      "userId": 3,
-      "showTitle": "Knjiga o Milutinu",
-      "showsDate": "2024-06-10"
-    },
-    {
-      "id": "f0b3",
-      "showId": 1,
-      "userId": 3,
-      "showTitle": "Knjiga o Milutinu",
-      "date": "2024-06-10"
+      "date": "2024-09-10"
     }
   ]
 }

@@ -1,0 +1,56 @@
+.admin-panel-container {
+    max-width: 800px;
+    margin: 38px;
+    padding: 50px;
+    margin-left: 230px;
+    margin-top: 85px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(249, 249, 249, 0.7);
+  }
+  
+  .admin-panel-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel-container form {
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .admin-panel-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .admin-panel-container .form-group input,
+  .admin-panel-container .form-group textarea,
+  .admin-panel-container .form-group button {
+    display: block;
+    width: 100%;
+  }
+  
+  .admin-panel-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-panel-container ul li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .admin-panel-container ul li div {
+    margin-bottom: 5px;
+  }
+  
+  .admin-panel-container ul li button {
+    margin-right: 10px;
+  }
+  

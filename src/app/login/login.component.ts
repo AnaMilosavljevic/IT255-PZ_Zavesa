@@ -17,7 +17,11 @@ export class LoginComponent {
     this.userService.getUserByUsername(this.username).subscribe(user => {
       if (user && user.password === this.password) {
         this.userService.setCurrentUser(user);
-        this.router.navigate(['/dashboard']);
+        if (user.role === 'admin') {
+          this.router.navigate(['/admin-panel']);
+        } else {
+          this.router.navigate(['/dashboard']);
+        }
       } else {
         alert('Pogrešno korisničko ime ili lozinka');
       }

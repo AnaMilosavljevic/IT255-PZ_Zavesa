@@ -31,6 +31,11 @@ export class UserService {
     return user ? JSON.parse(user) : null;
   }
 
+  isAdmin(): boolean {
+    const user = this.getCurrentUser();
+    return user && user.role === 'admin';
+  }
+
   logout(): void {
     localStorage.removeItem('currentUser');
     this.currentUserSubject.next(null);
