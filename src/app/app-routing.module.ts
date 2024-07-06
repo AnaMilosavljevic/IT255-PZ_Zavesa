@@ -10,6 +10,7 @@ import { RezervacijaComponent } from './rezervacija/rezervacija.component';
 import { MojeRezervacijeComponent } from './moje-rezervacije/moje-rezervacije.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { HomeComponent } from './home/home.component'; 
 
 const routes: Routes = [
   { path: 'recommendation', component: RecommendationComponent },
@@ -22,12 +23,12 @@ const routes: Routes = [
   { path: 'rezervacija/:id', component: RezervacijaComponent },
   { path: 'moje-rezervacije', component: MojeRezervacijeComponent },
   { path: 'admin-panel', component: AdminPanelComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/dashboard' }
+  { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '/' }, 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
